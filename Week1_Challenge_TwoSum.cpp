@@ -6,7 +6,7 @@ using namespace std;
 class Solution {
     public:
         vector<int> twoSum(vector<int>& nums, int target) {
-            unordered_map<int, int> map;  // it is a hash table that stores key-value pairs, whcih is used for mapping the numbers to their index
+            unordered_map<int, int> map;  // it is a hash table that stores key-value pairs, which is used for mapping the numbers to their index
     
              for (int i = 0; i < nums.size(); i++) {
                 int current = nums[i]; // holds the value of the current number
