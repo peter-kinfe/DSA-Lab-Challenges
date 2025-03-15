@@ -1,5 +1,6 @@
+// brute force solution this is the first approach
+
 // vector<int> twoSum(vector<int>& nums, int target) { //function to find the indices of the two numbers that add up to the target
-//     // Brute force solution this is the first approach
 //     for (int i = 0; i < nums.size(); i++) {       //outer loop
 //         for (int j = i + 1; j < nums.size(); j++) { //inner loop
 //             if (nums[i] + nums[j] == target) {
@@ -10,11 +11,12 @@
 //     return {};// return empty vector if no solution is found
 // }
 
+
+// this is the second approach which is the hash table approach
 #include <vector>
 #include <unordered_map>
 
 using namespace std;
-
 class Solution {
     public:
         vector<int> twoSum(vector<int>& nums, int target) {
