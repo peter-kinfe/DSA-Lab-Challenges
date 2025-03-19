@@ -3,10 +3,10 @@
 
 using namespace std;
 class Solution {
-    public:
-        void reverseString(vector<char>& s) {
-            for (int left = 0, right = s.size() - 1; left < right; left++, right--) {
-                swap(s[left], s[right]);
-            }
+public:
+    void reverseString(vector<char>& s) {
+        for (char* left = &s[0], *right = &s[s.size() - 1]; left < right; left++, right--) {
+            swap(*left, *right);
         }
-    };
+    }
+};
