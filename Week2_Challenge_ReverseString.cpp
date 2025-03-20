@@ -5,8 +5,8 @@ using namespace std;
 class Solution {
 public:
     void reverseString(vector<char>& s) {
-        for (char* left = &s[0], *right = &s[s.size() - 1]; left < right; left++, right--) { //using for loop i initialized left pointer to the first element of the vector and right pointer to the last element of the vector
-            swap(*left, *right);//then i used the swap function to swap the elements of the left and right pointers
+        for (char* left_pointer = &s[0], *right_pointer = &s[s.size() - 1]; left_pointer < right_pointer; left_pointer++, right_pointer--) { //using for loop i initialized left pointer to the first element of the vector and right pointer to the last element of the vector
+            swap(*left_pointer, *right_pointer);//then i used the swap function to swap the elements of the left and right pointers
         }
     }
 };
