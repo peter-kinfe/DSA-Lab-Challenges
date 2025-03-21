@@ -12,8 +12,7 @@ public:
         }
     
         int maxLength = 0; // Initialize the length of the longest palindrome to 0.
-    
-        
+
         for (int count : charCount) { // Iterate through the character counts.
             // Add the largest even number that is less than or equal to the current count.
             // This is because even counts can be mirrored on both sides of a palindrome.
