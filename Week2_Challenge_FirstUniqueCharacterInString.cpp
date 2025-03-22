@@ -7,13 +7,13 @@ using namespace std;
 class Solution {
 public:
     int firstUniqChar(string s) {
-        unordered_map<char, int> char_count; //create a hash map to store the count of each character in the string
+        unordered_map<char, int> charCount; //create a hash map to store the count of each character in the string
         for (char c : s) { //iterate through the string
-            char_count[c]++; //increment the count of the character in the hash map
+            charCount[c]++; //increment the count of the character in the hash map
         }
 
         for (int i = 0; i < s.size(); i++) { //iterate through the string
-            if (char_count[s[i]] == 1) { //if the count of the character is 1
+            if (charCount[s[i]] == 1) { //if the count of the character is 1
                 return i; //return the index of the character
             }
         }
